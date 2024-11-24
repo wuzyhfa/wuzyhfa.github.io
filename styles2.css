@@ -25,11 +25,7 @@
 }
 
 /* 后代选择器 */
-.employee-category .employee-card {
-  color: #424242;
-  padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
+
 
 /* 并集选择器 */
 .tech-dept, .marketing-dept {
