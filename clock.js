@@ -27,7 +27,7 @@ const data = {
     this.timeZoneOffset = `UTC${sign}${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
   },
   formatTime: function() {
-    // 格式化时间为完整的时间字符串，精确到毫秒并包含时区
+ 
     let timeString = `${this.year}年${this.month < 10 ? '0' + this.month : this.month}月${this.day < 10 ? '0' + this.day : this.day}日 ` +
            `${this.weekday} ` +
            `${this.hours < 10 ? '0' + this.hours : this.hours}:${this.minutes < 10 ? '0' + this.minutes : this.minutes}:${this.seconds < 10 ? '0' + this.seconds : this.seconds}`;
@@ -44,7 +44,7 @@ const data = {
   }
 };
 
-// 每毫秒更新一次时间并显示
+
 function updateClock() {
   data.updateTime(); // 更新时间
   document.getElementById('clock').textContent = data.formatTime(); // 更新时钟显示
